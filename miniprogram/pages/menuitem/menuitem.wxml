@@ -1,6 +1,36 @@
 <!--pages/menuitem/menuitem.wxml-->
-<view class="head">
-    <input class="input" password placeholder="请输入菜名"
-     bindinput="searchContent" />
-     <text>搜索</text>
+<view class="top">
+  <view class="topsearch">
+    <view class="frame">
+      <input value="{{shoopingtext}}" bindinput="shoppinginput"
+      placeholder="请输入菜名"></input>
+    </view>
+    <text class="text-search" bindtap="search">搜索</text>
+  </view>
+</view>
+<view class="history" wx:if="{{history}}">
+  <view class="history_title">
+    <text>历史搜索</text>
+    <image src="/images/delete.png" mode="widthFix" style="width:5%;" bindtap="cleanhistory"></image>
+  </view>
+  <view class="history_text">
+    <text wx:for="{{newArray}}" wx:key="key" data-text="{{item}}" bindtap="textfz">{{item}}</text>
+  </view>
+</view>
+<view class="none" wx:if="{{noneview}}">
+  <image src="/images/null.png" mode="widthFix" style="width:20%"></image>
+  <text>抱歉，没有相关菜谱</text>
+</view>
+<view class='swiper_con' wx:if="{{!noneview}}">
+  <view class='swiper_con_view' wx:for="{{recipeList}}" wx:key="id" >
+    <image src="{{item.images}}" mode="widthFix" style="width:100%" data-status="{{item.status}}"></image>
+    <view style="width:90%;margin:5%;">
+      <text style="font-size:24rpx">{{item.name}}</text>
+      <view class="swiper_con_view_view">
+        <view style="width:80%;">
+          <text style="font-size:18rpx;color:#B8B8B8;margin-left:5%;">标签{{item.sold}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
 </view>
