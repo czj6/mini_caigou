@@ -1,0 +1,6 @@
+<!--pages/menuitem/menuitem.wxml-->
+<view class="head">
+    <input class="input" password placeholder="请输入菜名"
+     bindinput="searchContent" />
+     <text>搜索</text>
+</view>

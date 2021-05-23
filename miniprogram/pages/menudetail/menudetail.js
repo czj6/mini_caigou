@@ -1,4 +1,4 @@
-// pages/deployFunctions/deployFunctions.js
+// pages/menudetail/menudetail.js
 Page({
 
   /**

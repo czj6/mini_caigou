@@ -1,0 +1,12 @@
+/* pages/menuitem/menuitem.wxss */
+.head{
+  display: flex;
+  flex-direction: row;
+  background-color: #7fffffff;
+  border-radius: 4px;
+  height: fit-content;
+}
+.input{
+  width: fit-content;
+  display: inline;
+}
