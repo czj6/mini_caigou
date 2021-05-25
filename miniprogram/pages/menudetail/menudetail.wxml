@@ -1,2 +1,92 @@
 <!--pages/menudetail/menudetail.wxml-->
-<text>pages/menudetail/menudetail.wxml</text>
+<view class="headBar">
+  <image src="../../images/arrow-left-bold.png" class="arrow"></image>
+  <text class="text">菜谱详情</text>
+</view>
+<view class="titleBar">
+  <image src="../../images/u66.png" class="title-img"></image>
+  <text class="title-text">菜谱详情</text>
+</view>
+<view class="main-ingredient">
+  <text class="ingredient-title" >超市每份配送：</text>
+  <view class="item-wrap">
+    <view class="ingredient-item">
+      <text class="ingredient-item-title">鸡腿</text>
+      <text class="ingredient-item-weight">400g</text>
+    </view>
+    <view class="ingredient-item">
+      <text class="ingredient-item-title">鸡腿</text>
+      <text class="ingredient-item-weight">400g</text>
+    </view>
+    <view class="ingredient-item">
+      <text class="ingredient-item-title">鸡腿</text>
+      <text class="ingredient-item-weight">400g</text>
+    </view>
+    <view class="ingredient-item">
+      <text class="ingredient-item-title">鸡腿</text>
+      <text class="ingredient-item-weight">400g</text>
+    </view>
+    <view class="ingredient-item">
+      <text class="ingredient-item-title">鸡腿</text>
+      <text class="ingredient-item-weight">400g</text>
+    </view>
+    <view class="ingredient-item">
+      <text class="ingredient-item-title">鸡腿</text>
+      <text class="ingredient-item-weight">400g</text>
+    </view>
+    <view class="ingredient-item">
+      <text class="ingredient-item-title">鸡腿</text>
+      <text class="ingredient-item-weight">400g</text>
+    </view>
+    <view class="ingredient-item">
+      <text class="ingredient-item-title">鸡腿</text>
+      <text class="ingredient-item-weight">400g</text>
+    </view>
+    <view class="ingredient-item">
+      <text class="ingredient-item-title">鸡腿</text>
+      <text class="ingredient-item-weight">400g</text>
+    </view>
+    <view class="ingredient-item">
+      <text class="ingredient-item-title">鸡腿</text>
+      <text class="ingredient-item-weight">400g</text>
+    </view>
+    <view class="ingredient-item">
+      <text class="ingredient-item-title">鸡腿</text>
+      <text class="ingredient-item-weight">400g</text>
+    </view>
+  </view>
+</view>
+<view class="sub-ingredient">
+  <text class="ingredient-title" >所需配料:</text>
+  <view class="item-wrap">
+    <view class="ingredient-item">
+      <text class="ingredient-item-title">鸡腿</text>
+      <text class="ingredient-item-weight">400g</text>
+    </view>
+    <view class="ingredient-item">
+      <text class="ingredient-item-title">鸡腿</text>
+      <text class="ingredient-item-weight">400g</text>
+    </view>
+    <view class="ingredient-item">
+      <text class="ingredient-item-title">鸡腿</text>
+      <text class="ingredient-item-weight">400g</text>
+    </view>
+  </view>
+</view>
+<view class="page-section-spacing">
+  <scroll-view scroll-y="true" style="height: 400rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <text class="scroll-text">做法步骤：</text>
+    <view class="scroll-item" class="scroll-view-item demo-text-1">
+      <view class="scroll-item-num">1</view>
+      <text class="scroll-item-text">鸡腿去皮，很容易，一拉就下来了，再用剪刀剪去筋膜，切成小块。</text>
+    </view>
+    <view class="scroll-item"  class="scroll-view-item demo-text-2">
+      <view class="scroll-item-num">2</view>
+      <text class="scroll-item-text">鸡腿去皮，很容易，一拉就下来了，再用剪刀剪去筋膜，切成小块。</text>
+    </view>
+    <view class="scroll-item" class="scroll-view-item demo-text-3">
+      <view class="scroll-item-num">3</view>
+      <text class="scroll-item-text">鸡腿去皮，很容易，一拉就下来了，再用剪刀剪去筋膜，切成小块。</text>
+    </view>
+  </scroll-view>
+</view>

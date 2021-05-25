@@ -1,1 +1,102 @@
 /* pages/menudetail/menudetail.wxss */
+
+.headBar {
+  display: flex;
+  align-items: center;
+  padding: 5rpx 7rpx;
+}
+.arrow {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 8rpx;
+}
+.headBar text{
+  font-size: 30rpx;
+}
+.titleBar{
+  display: flex;
+  align-items: center;
+  padding: 30rpx 20rpx;
+}
+.title-img{
+  width: 200rpx;
+  height: 200rpx;
+
+}
+.title-text{
+  font-size: 40rpx;
+  font-weight: bold;
+  margin-left: 80rpx;
+}
+.main-ingredient {
+  margin: 0 20rpx;
+  border: 1px solid #000;
+  border-radius: 8px;
+}
+.sub-ingredient {
+  margin: 20rpx;
+  border: 1px solid #000;
+  border-radius: 8px;
+}
+.ingredient-title {
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.item-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ingredient-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10rpx 15rpx;
+}
+.ingredient-item-title {
+  font-size: 28rpx;
+  font-weight: bold;
+}s
+.ingredient-item-weight {
+  font-size: 23rpx;
+  font-weight: normal;
+}
+
+
+
+.page-section-spacing{
+  border: 1px solid #000;
+  margin: 20rpx;
+  height: 400rpx;
+  border-radius: 8rpx;
+}
+.scroll-view_H{
+  white-space: nowrap;
+}
+.scroll-view-item{
+  margin: 10rpx 0;
+}
+.scroll-view-item_H{
+  display: inline-block;
+  width: 100%;
+  height: 300rpx;
+}
+
+.scroll-text {
+  margin: 20rpx 0;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.scroll-item {
+  margin: 30rpx 0;
+}
+.scroll-item text {
+  font-size: 25rpx;
+}
+.scroll-item-num {
+  width: 50rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
