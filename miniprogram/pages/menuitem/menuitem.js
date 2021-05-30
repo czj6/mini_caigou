@@ -5,9 +5,34 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    recipeList: [{
+      images: 'https://st-cn.meishij.net/r/150/151/14787900/s14787900_161545896864154.jpg',
+      tag: '快手菜',
+      name: '无油可乐鸡翅'
+    },{
+      images: 'https://st-cn.meishij.net/r/150/151/14787900/s14787900_161545896864154.jpg',
+      tag: '快手菜',
+      name: '无油可乐鸡翅'
+    },{
+      images: 'https://st-cn.meishij.net/r/150/151/14787900/s14787900_161545896864154.jpg',
+      tag: '快手菜',
+      name: '无油可乐鸡翅'
+    },{
+      images: 'https://st-cn.meishij.net/r/150/151/14787900/s14787900_161545896864154.jpg',
+      tag: '快手菜',
+      name: '无油可乐鸡翅'
+    }]
   },
-
+  goDetail(e) {
+    let id = e.currentTarget.dataset.id
+    wx.navigateTo({
+      url: `/pages/menudetail/menudetail?id=${id}`,
+      success: function(res) {
+        // 通过eventChannel向被打开页面传送数据
+        res.eventChannel.emit('acceptDataFromOpenerPage', { data: 'test' })
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
