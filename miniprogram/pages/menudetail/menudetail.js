@@ -10,6 +10,8 @@ Page({
         id: 1, 
         name: '番茄炒牛肉',
         tag:'快手菜',
+      images: 'https://st-cn.meishij.net/r/136/15/2378886/s2378886_158054137745061.jpg',
+
         ingredient: [
           {
             title: '牛肉',
@@ -56,6 +58,8 @@ Page({
             {
         id: 2, 
         name: '韭菜炒绿豆芽儿儿',
+      images: 'https://st-cn.meishij.net/r/183/132/4658183/s4658183_158047604807174.jpg',
+
         tag:'快手菜',
         ingredient: [
           {
@@ -104,6 +108,8 @@ Page({
         id: 3, 
         name: '凉拌海带丝',
         tag:'快手菜',
+      images: 'https://st-cn.meishij.net/r/153/116/13029153/s13029153_157823449375249.jpg',
+
         ingredient: [
           {
             title: '海带丝',
@@ -151,6 +157,7 @@ Page({
         id: 4, 
         name: '清蒸鲈鱼',
         tag:'快手菜',
+      images: 'https://st-cn.meishij.net/r/209/204/6801209/s6801209_158641292495525.jpg',
         ingredient: [
           {
             title: '鲈鱼',
@@ -205,6 +212,7 @@ Page({
       },
             {
         id: 5, 
+        images: 'https://st-cn.meishij.net/r/73/127/10031823/s10031823_158497239195350.jpg',
         name: '西芹炒虾仁',
         tag:'快手菜',
         ingredient: [
@@ -257,7 +265,8 @@ Page({
         }]
       }
 
-    ]
+    ],
+    currentDetail: ''
 
   },
 
@@ -265,7 +274,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let index = options.id
+    let {detail} = this.data
+    this.setData({
+      currentDetail: detail[index]
+    })
   },
 
   /**

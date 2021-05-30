@@ -1,25 +1,21 @@
 <!--pages/menudetail/menudetail.wxml-->
-<view class="headBar">
-  <image src="../../images/arrow-left-bold.png" class="arrow"></image>
-  <text class="text">菜谱详情</text>
-</view>
 <view class="titleBar">
-  <image src="../../images/u66.png" class="title-img"></image>
-  <text class="title-text">菜谱详情</text>
+  <image src="{{currentDetail.images}}" class="title-img"></image>
+  <text class="title-text">{{currentDetail.name}}</text>
 </view>
 <view class="main-ingredient">
   <text class="ingredient-title" >所需配料：</text>
   <view class="item-wrap">
-    <view class="ingredient-item" wx:for="{{detail.ingredient}}" wx:key="id">
+    <view class="ingredient-item" wx:for="{{currentDetail.ingredient}}" wx:key="id">
       <text class="ingredient-item-title">{{item.title}}</text>
       <text class="ingredient-item-weight">{{item.weight}}</text>
     </view>
   </view>
 </view>
 <view class="page-section-spacing">
-  <scroll-view scroll-y="true" style="height: 400rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  <scroll-view scroll-y="true" style="height: 100%;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
     <text class="scroll-text">做法步骤：</text>
-    <view class="scroll-item" class="scroll-view-item demo-text-1" wx:for="{{detail.step}}" wx:key="id">
+    <view class="scroll-item" class="scroll-view-item demo-text-1" wx:for="{{currentDetail.step}}" wx:key="id">
       <view class="scroll-item-num">{{item.title}}</view>
       <text class="scroll-item-text">{{item.content}}</text>
     </view>

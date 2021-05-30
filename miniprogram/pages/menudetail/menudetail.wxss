@@ -66,8 +66,9 @@
 .page-section-spacing{
   border: 1px solid #000;
   margin: 20rpx;
-  height: 400rpx;
+  height: 700rpx;
   border-radius: 8rpx;
+  padding: 15rpx;
 }
 .scroll-view_H{
   white-space: nowrap;

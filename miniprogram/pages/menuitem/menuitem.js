@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    recipeList: [{
+    recipeList: [],
+    allItem: [{
       images: 'https://st-cn.meishij.net/r/136/15/2378886/s2378886_158054137745061.jpg',
       tag: '快手菜',
       id: 1,
@@ -42,11 +43,23 @@ Page({
       }
     })
   },
+  search(){
+    let key = this.data.shoopingtext
+    let items = this.data.allItem.filter(item => {
+      return item.name.indexOf(key) !== -1
+    })
+    console.log(items);
+    this.setData({
+      recipeList: items
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      recipeList: this.data.allItem
+    })
   },
 
   /**

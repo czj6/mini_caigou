@@ -2,7 +2,7 @@
 <view class="top">
   <view class="topsearch">
     <view class="frame">
-      <input value="{{shoopingtext}}" bindinput="shoppinginput"
+      <input model:value="{{shoopingtext}}"
       placeholder="请输入菜名"></input>
     </view>
     <text class="text-search" bindtap="search">搜索</text>
